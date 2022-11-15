@@ -13,11 +13,12 @@ h1.heading {
 	// }
 }
 
-h3.heading {
+h2.heading {
 	font-size: 3.6rem;
 	color: $color-black;
 	font-weight: 600;
 	font-family: $font-primary;
+	line-height: 5rem;
 
 	// @media only screen and (max-width: $tab-land) {
 	// 	font-size: 4rem;
@@ -50,9 +51,9 @@ h4.heading {
 
 .text {
 	font-size: 1.6rem;
-	color: $color-black;
 	font-weight: 400;
 	font-family: $font-primary;
+	color: #444444;
 }
 
 a:link,

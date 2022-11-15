@@ -4,7 +4,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	list-style: none;
+	// list-style: none;
 	text-decoration: none;
 	outline: none;
 	text-transform: capitalize;
@@ -19,10 +19,10 @@ html {
 	scroll-behavior: smooth;
 	overflow-x: hidden;
 
-	@media only screen and (max-width: $laptop-land) {
+	@media only screen and (max-width: $tab-land) {
 		font-size: 55%;
 	}
-	@media only screen and (max-width: $tab-land) {
+	@media only screen and (max-width: $mbl-land) {
 		font-size: 50%;
 	}
 }
@@ -31,9 +31,9 @@ body {
 	font-family: $font-primary;
 	font-size: 1.6rem;
 	font-weight: 400;
-	color: $color-white;
+	color: $color-black;
 	overflow-x: hidden;
-	background-color: $color-black;
+	background-color: $color-white;
 }
 
 .container {

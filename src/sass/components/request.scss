@@ -1,0 +1,39 @@
+.request-sction {
+	.request {
+		max-width: 100rem;
+		margin: 0 auto;
+
+		&__form {
+			input,
+			textarea {
+				width: 100%;
+				padding: 1rem 2rem;
+				background: #f8f8f8;
+				border-radius: 3rem;
+				border: none;
+				outline: none;
+			}
+
+			textarea {
+				max-width: 60rem;
+			}
+
+			.btn {
+				padding: 1rem 2rem;
+				background: #000133;
+				border-radius: 3rem;
+				font-weight: 600;
+				font-size: 1.8rem;
+				line-height: 2.5rem;
+				color: $color-white;
+				text-transform: capitalize;
+			}
+		}
+
+		.d-flex {
+			@media only screen and (max-width: $mbl-land) {
+				flex-direction: column;
+			}
+		}
+	}
+}

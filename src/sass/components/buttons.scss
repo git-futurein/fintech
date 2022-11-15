@@ -5,7 +5,7 @@ button {
 }
 
 .btn {
-	padding: 2rem 4rem;
+	padding: 1.7rem 4rem;
 	border: none;
 	font-size: 3rem;
 	font-weight: bold;
@@ -13,9 +13,4 @@ button {
 	letter-spacing: -1px;
 	transition: all 0.3s;
 	line-height: 1;
-
-	&:hover {
-		color: $color-white;
-		transform: scale(1.1);
-	}
 }
