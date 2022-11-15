@@ -1278,6 +1278,59 @@ button {
   border-bottom: 2px solid #000133;
 }
 
+.footer-section .footer__item h3 {
+  font-size: 2.4rem;
+}
+.footer-section .footer__item .btn {
+  font-size: 1.6rem;
+  font-weight: 400;
+  border: 1px solid #000133;
+  border-radius: 3rem;
+  padding: 1.5rem 3.5rem;
+}
+.footer-section .footer__item .btn-docs {
+  background-color: #000133;
+  color: #fff;
+}
+.footer-section .footer__item .btn-docs:hover {
+  background-color: transparent;
+  color: #000133;
+}
+.footer-section .footer__item .btn-api {
+  background-color: transparent;
+  color: #000133;
+}
+.footer-section .footer__item .btn-api:hover {
+  background-color: #000133;
+  color: #fff;
+}
+.footer-section .footer .logo-area .social {
+  list-style: none;
+}
+.footer-section .footer .logo-area .social__link {
+  background-color: #000133;
+  height: 3.2rem;
+  width: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.footer-section .footer .logo-area .social__link i {
+  color: #fff;
+  font-size: 1.6rem;
+}
+.footer-section .footer .list {
+  list-style: none;
+}
+.footer-section .footer .list .item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.footer-section .footer .list .item .link {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
 .header__wrapper {
   min-height: 78vh;
   align-items: center;
