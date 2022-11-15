@@ -1,0 +1,88 @@
+h1.heading {
+	font-weight: 600;
+	line-height: 150%;
+	font-size: 4.6rem;
+	color: $color-black;
+	font-family: $font-primary;
+
+	// @media only screen and (max-width: $tab-land) {
+	// 	font-size: 7rem;
+	// }
+	// @media only screen and (max-width: $mbl-land) {
+	// 	font-size: 5rem;
+	// }
+}
+
+h3.heading {
+	font-size: 3.6rem;
+	color: $color-black;
+	font-weight: 600;
+	font-family: $font-primary;
+
+	// @media only screen and (max-width: $tab-land) {
+	// 	font-size: 4rem;
+	// }
+	// @media only screen and (max-width: $mbl-land) {
+	// 	font-size: 3.6rem !important;
+	// }
+}
+
+h3.heading {
+	font-weight: 600;
+	font-size: 2.4rem;
+	line-height: 3.3rem;
+	font-family: $font-primary;
+}
+
+h4.heading {
+	font-size: 1.8rem;
+	color: $color-black;
+	line-height: 2.5rem;
+	font-weight: 600;
+
+	// @media only screen and (max-width: $tab-land) {
+	// 	font-size: 2.6rem;
+	// }
+	// @media only screen and (max-width: $mbl-land) {
+	// 	font-size: 2.2rem;
+	// }
+}
+
+.text {
+	font-size: 1.6rem;
+	color: $color-black;
+	font-weight: 400;
+	font-family: $font-primary;
+}
+
+a:link,
+a:visited {
+	font-size: 1.4rem;
+	font-weight: 600;
+	text-decoration: none;
+	text-transform: capitalize;
+	color: #000133;
+	font-family: $font-primary;
+}
+
+@mixin pos-center {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin img-size {
+	height: 100%;
+	width: 100%;
+}
+
+@mixin icon-vector {
+	height: 2rem;
+	width: 2rem;
+}
