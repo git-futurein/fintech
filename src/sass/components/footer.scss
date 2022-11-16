@@ -2,6 +2,9 @@
 	.footer {
 		&__item {
 			// text-align: center;
+			@media only screen and (max-width: $mbl-land) {
+				text-align: center;
+			}
 
 			h3 {
 				font-size: 2.4rem;
@@ -42,6 +45,10 @@
 			.social {
 				list-style: none;
 
+				@media only screen and (max-width: $mbl-land) {
+					justify-content: center;
+				}
+
 				&__link {
 					background-color: $color-black;
 					height: 3.2rem;
@@ -72,6 +79,12 @@
 					font-size: 1.6rem;
 					font-weight: 400;
 				}
+			}
+		}
+
+		&__btns {
+			@media only screen and (max-width: $mbl-land) {
+				justify-content: center;
 			}
 		}
 	}

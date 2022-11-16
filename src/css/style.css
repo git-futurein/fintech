@@ -63,6 +63,16 @@ h1.heading {
   color: #000133;
   font-family: "Open Sans", sans-serif;
 }
+@media only screen and (max-width: 62em) {
+  h1.heading {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 35.9375em) {
+  h1.heading {
+    font-size: 3.2rem;
+  }
+}
 
 h2.heading {
   font-size: 3.6rem;
@@ -71,12 +81,30 @@ h2.heading {
   font-family: "Open Sans", sans-serif;
   line-height: 5rem;
 }
+@media only screen and (max-width: 62em) {
+  h2.heading {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
 
 h3.heading {
   font-weight: 600;
   font-size: 2.4rem;
   line-height: 3.3rem;
   font-family: "Open Sans", sans-serif;
+}
+@media only screen and (max-width: 62em) {
+  h3.heading {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+}
+@media only screen and (max-width: 35.9375em) {
+  h3.heading {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
 }
 
 h4.heading {
@@ -91,6 +119,11 @@ h4.heading {
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
   color: #444444;
+}
+@media only screen and (max-width: 62em) {
+  .text {
+    font-size: 1.4rem;
+  }
 }
 
 a:link,
@@ -1196,6 +1229,11 @@ button {
   line-height: 1;
 }
 
+@media only screen and (max-width: 62em) {
+  .nav .container {
+    max-width: 100%;
+  }
+}
 .nav .main-nav {
   background-color: #090b26;
   padding: 1rem 0;
@@ -1208,12 +1246,22 @@ button {
 .nav__right {
   gap: 6rem;
 }
+@media only screen and (max-width: 62em) {
+  .nav__right {
+    gap: 3rem;
+  }
+}
 .nav__right .login {
   font-weight: 600;
   font-size: 1.8rem;
   line-height: 2.5rem;
   text-transform: uppercase;
   color: #fff;
+}
+@media only screen and (max-width: 62em) {
+  .nav__right .login {
+    display: none;
+  }
 }
 .nav__right .wishlist,
 .nav__right .cart {
@@ -1260,6 +1308,11 @@ button {
   width: 100%;
   padding: 3.7rem 0;
 }
+@media only screen and (max-width: 62em) {
+  .nav__links {
+    display: none;
+  }
+}
 .nav__list {
   list-style: none;
 }
@@ -1278,6 +1331,11 @@ button {
   border-bottom: 2px solid #000133;
 }
 
+@media only screen and (max-width: 35.9375em) {
+  .footer-section .footer__item {
+    text-align: center;
+  }
+}
 .footer-section .footer__item h3 {
   font-size: 2.4rem;
 }
@@ -1307,6 +1365,11 @@ button {
 .footer-section .footer .logo-area .social {
   list-style: none;
 }
+@media only screen and (max-width: 35.9375em) {
+  .footer-section .footer .logo-area .social {
+    justify-content: center;
+  }
+}
 .footer-section .footer .logo-area .social__link {
   background-color: #000133;
   height: 3.2rem;
@@ -1329,6 +1392,11 @@ button {
 .footer-section .footer .list .item .link {
   font-size: 1.6rem;
   font-weight: 400;
+}
+@media only screen and (max-width: 35.9375em) {
+  .footer-section .footer__btns {
+    justify-content: center;
+  }
 }
 
 .header__wrapper {
@@ -1616,6 +1684,14 @@ button {
 .client-section .client__profile img {
   height: 100%;
   width: 100%;
+}
+
+.dark {
+  background-color: #06132d;
+}
+.dark .nav__links {
+  background: #06132d;
+  box-shadow: 0px 0px 25px 10px rgba(0, 255, 226, 0.25);
 }
 
 /*# sourceMappingURL=style.css.map */

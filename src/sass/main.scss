@@ -1,23 +1,28 @@
 // ============================================
 // Base
 // ============================================
-@import "./base/variables";
-@import "./base/base";
-@import "./base/typography";
+@import './base/variables';
+@import './base/base';
+@import './base/typography';
 
 // ============================================
 // Utility
 // ============================================
-@import "./utils/reset";
-@import "./utils/helper";
-@import "./utils/text-width";
+@import './utils/reset';
+@import './utils/helper';
+@import './utils/text-width';
 
 // ============================================
 // Components
 // ============================================
-@import "./components/components.scss";
+@import './components/components.scss';
 
 // ============================================
 // Pages
 // ============================================
-@import "./pages/pages.scss";
+@import './pages/pages.scss';
+
+// ============================================
+// Layout
+// ============================================
+@import './layouts/layout.scss';
