@@ -39,7 +39,11 @@
 		}
 
 		.logo-area {
-			.logo {
+			.logo-white {
+				display: none;
+			}
+			.logo-black {
+				display: block;
 			}
 
 			.social {

@@ -1,35 +1,100 @@
 .membership-section {
 	.membership {
 		&__item {
-			padding: 2.8rem 2rem;
+			padding: 2.8rem 2rem 5rem 2rem;
 			background: #f8f8f8;
-			border: 2px solid #cfd8dc;
 			border-radius: 1.2rem;
 			height: 100%;
+			box-shadow: 0px 0px 10px 2px rgba(32, 35, 74, 0.25);
 			position: relative;
+			transition: all 0.3s;
+			z-index: 1;
+
+			&:hover {
+				transform: scaleY(1.1) scaleX(1.2);
+				box-shadow: 0px 0px 10px 2px rgba(32, 35, 74, 0.25);
+				position: relative;
+				z-index: 2;
+
+				.membership__icon-1 {
+					display: none;
+				}
+				.membership__icon-2 {
+					display: block;
+				}
+
+				.btn {
+					background-color: $color-primary;
+				}
+
+				h2 {
+					color: #33a2ff;
+				}
+
+				h3 {
+					.price {
+						color: $color-primary;
+					}
+					.month {
+						color: $color-primary;
+					}
+				}
+			}
+
+			h2 {
+				font-size: 2.1rem;
+				line-height: 2.9rem;
+			}
+
+			h3 {
+				.price {
+					font-size: 2.4rem;
+					color: #979797;
+				}
+				.month {
+					font-size: 0.9rem;
+				}
+			}
 		}
 
 		&__top {
-			border-bottom: 2px solid #cfd8dc;
+			// border-bottom: 2px solid #cfd8dc;
 			text-align: center;
-			padding-bottom: 4rem;
+			padding-bottom: 2rem;
+		}
+
+		&__icon {
+			height: 3.5rem;
+			width: 3.5rem;
+			margin: 0 auto;
+		}
+		&__icon-1 {
+			display: block;
+		}
+		&__icon-2 {
+			display: none;
 		}
 
 		&__list {
-			padding-top: 2.8rem;
-			padding-left: 2rem;
+			// padding-top: 2.8rem;
+			// padding-left: 2rem;
 			padding-bottom: 2rem;
+			list-style: none;
 
 			li {
-				&:not(:last-child) {
-					margin-bottom: 2rem;
+				text-align: center;
+				border-bottom: 1px solid rgba(238, 238, 238, 0.37);
+				padding: 1rem;
+
+				i {
+					color: $color-primary;
 				}
 			}
 		}
 
 		.btn {
 			position: absolute;
-			bottom: -3rem;
+			bottom: 1.4rem;
 			left: 50%;
 			transform: translateX(-50%);
 			background-color: $color-black;
@@ -39,44 +104,8 @@
 			text-align: center;
 			color: #ffffff;
 			width: 80%;
-			border-radius: 10rem;
-		}
-
-		.vip {
-			h2 {
-				color: #33a2ff;
-			}
-
-			.btn {
-				background: linear-gradient(90deg, #0066ff 1.3%, #39a9ff 100%);
-			}
-		}
-		.premium {
-			h2 {
-				color: $color-black;
-			}
-
-			.btn {
-				background: linear-gradient(90deg, #000133 1.3%, #000133 100%);
-			}
-		}
-		.Elite {
-			h2 {
-				color: $color-orenge;
-			}
-
-			.btn {
-				background: linear-gradient(90deg, #ff6b33 1.3%, #ff9933 100%);
-			}
-		}
-		.Reseller {
-			h2 {
-				color: $color-red;
-			}
-
-			.btn {
-				background: linear-gradient(90deg, #cb2323 1.3%, #ff0000 100%);
-			}
+			border-radius: 1rem;
+			padding: 0.7rem;
 		}
 	}
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -38,7 +38,6 @@
 							</div>
 							<div class="nav__right d-flex align-items-center">
 								<div class="d-flex align-items-center gap-5">
-									<a href="#" class="link login">login/register</a>
 									<a href="#" class="nav__icon wishlist">
 										<i class="bi bi-heart"></i>
 										<span class="wishlist__number">4</span>
@@ -47,19 +46,23 @@
 										<i class="bi bi-basket2"></i>
 										<span class="cart__number">4</span>
 									</a>
+									<button class="btn btn-dark">
+										<svg class="icon icon-dark">
+											<use xlink:href="img/icons.svg#icon-dark"></use>
+										</svg>
+									</button>
+									<button class="btn btn-light">
+										<svg class="icon icon-dark">
+											<use xlink:href="img/icons.svg#icon-light"></use>
+										</svg>
+									</button>
+									<a href="#" class="link login">login/register</a>
 								</div>
-								<button class="btn btn-dark d-flex align-items-center">
-									<svg class="icon icon-dark"><use xlink:href="img/icons.svg#icon-dark"></use></svg>
-								</button>
-								<button class="btn btn-light d-none">
-									<svg class="icon icon-dark">
-										<use xlink:href="img/icons.svg#icon-light"></use>
-									</svg>
-								</button>
 							</div>
 						</div>
 					</div>
 				</div>
+
 				<div class="nav__links">
 					<div class="container">
 						<ul class="nav__list d-flex justify-content-center align-items-center gap-5">
@@ -113,6 +116,12 @@
 										<i class="bi bi-search"></i>
 									</label>
 									<input type="text" id="search" class="w-100" placeholder="Search here..." />
+									<select name="" id="">
+										<option value="All products">All products</option>
+										<option value="All products">All products</option>
+										<option value="All products">All products</option>
+										<option value="All products">All products</option>
+									</select>
 								</form>
 							</div>
 						</div>
@@ -187,50 +196,226 @@
 					<div class="items row g-5 mb-4">
 						<div class="col-12 col-sm-6 col-lg-3">
 							<div class="items__item">
-								<h4 class="heading">Operating Systems & Mac Software</h4>
 								<img src="img/items-img-1.png" alt="" class="items__img" />
+								<h5 class="heading name">Microsoft Office</h5>
+								<h5 class="heading title">Operating Systems & Mac Software</h5>
+								<div class="price-list d-flex justify-content-center align-items-center gap-2 mb-1">
+									<p class="price">$30.00</p>
+									<span class="discount">-11%</span>
+									<span class="old-price">$45.00</span>
+								</div>
+
+								<div class="items__bottom">
+									<p class="text mb-2 text-center">
+										Lorem ipsum dolor sit amet consectetur. Sollicitudin maecenas vehicula neque
+										eget ut fringilla.
+									</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<button class="btn btn-search">
+											<i class="bi bi-search"></i>
+										</button>
+										<button class="btn btn-cart">Add to cart</button>
+										<button class="btn btn-wishlist">
+											<i class="bi bi-heart"></i>
+										</button>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="col-12 col-sm-6 col-lg-3">
 							<div class="items__item">
-								<h4 class="heading">Office & Management</h4>
 								<img src="img/items-img-2.png" alt="" class="items__img" />
+								<h5 class="heading name">Microsoft Office</h5>
+								<h5 class="heading title">Operating Systems & Mac Software</h5>
+								<div class="price-list d-flex justify-content-center align-items-center gap-2 mb-1">
+									<p class="price">$30.00</p>
+									<span class="discount">-11%</span>
+									<span class="old-price">$45.00</span>
+								</div>
+
+								<div class="items__bottom">
+									<p class="text mb-2 text-center">
+										Lorem ipsum dolor sit amet consectetur. Sollicitudin maecenas vehicula neque
+										eget ut fringilla.
+									</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<button class="btn btn-search">
+											<i class="bi bi-search"></i>
+										</button>
+										<button class="btn btn-cart">Add to cart</button>
+										<button class="btn btn-wishlist">
+											<i class="bi bi-heart"></i>
+										</button>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="col-12 col-sm-6 col-lg-3">
 							<div class="items__item">
-								<h4 class="heading">Graphics Software</h4>
 								<img src="img/items-img-3.png" alt="" class="items__img" />
+								<h5 class="heading name">Microsoft Office</h5>
+								<h5 class="heading title">Operating Systems & Mac Software</h5>
+								<div class="price-list d-flex justify-content-center align-items-center gap-2 mb-1">
+									<p class="price">$30.00</p>
+									<span class="discount">-11%</span>
+									<span class="old-price">$45.00</span>
+								</div>
+
+								<div class="items__bottom">
+									<p class="text mb-2 text-center">
+										Lorem ipsum dolor sit amet consectetur. Sollicitudin maecenas vehicula neque
+										eget ut fringilla.
+									</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<button class="btn btn-search">
+											<i class="bi bi-search"></i>
+										</button>
+										<button class="btn btn-cart">Add to cart</button>
+										<button class="btn btn-wishlist">
+											<i class="bi bi-heart"></i>
+										</button>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="col-12 col-sm-6 col-lg-3">
 							<div class="items__item">
-								<h4 class="heading">Finance & Accountancy</h4>
 								<img src="img/items-img-4.png" alt="" class="items__img" />
+								<h5 class="heading name">Microsoft Office</h5>
+								<h5 class="heading title">Operating Systems & Mac Software</h5>
+								<div class="price-list d-flex justify-content-center align-items-center gap-2 mb-1">
+									<p class="price">$30.00</p>
+									<span class="discount">-11%</span>
+									<span class="old-price">$45.00</span>
+								</div>
+
+								<div class="items__bottom">
+									<p class="text mb-2 text-center">
+										Lorem ipsum dolor sit amet consectetur. Sollicitudin maecenas vehicula neque
+										eget ut fringilla.
+									</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<button class="btn btn-search">
+											<i class="bi bi-search"></i>
+										</button>
+										<button class="btn btn-cart">Add to cart</button>
+										<button class="btn btn-wishlist">
+											<i class="bi bi-heart"></i>
+										</button>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="col-12 col-sm-6 col-lg-3">
 							<div class="items__item">
-								<h4 class="heading">Operating Systems & Mac Software</h4>
 								<img src="img/items-img-1.png" alt="" class="items__img" />
+								<h5 class="heading name">Microsoft Office</h5>
+								<h5 class="heading title">Operating Systems & Mac Software</h5>
+								<div class="price-list d-flex justify-content-center align-items-center gap-2 mb-1">
+									<p class="price">$30.00</p>
+									<span class="discount">-11%</span>
+									<span class="old-price">$45.00</span>
+								</div>
+
+								<div class="items__bottom">
+									<p class="text mb-2 text-center">
+										Lorem ipsum dolor sit amet consectetur. Sollicitudin maecenas vehicula neque
+										eget ut fringilla.
+									</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<button class="btn btn-search">
+											<i class="bi bi-search"></i>
+										</button>
+										<button class="btn btn-cart">Add to cart</button>
+										<button class="btn btn-wishlist">
+											<i class="bi bi-heart"></i>
+										</button>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="col-12 col-sm-6 col-lg-3">
 							<div class="items__item">
-								<h4 class="heading">Office & Management</h4>
 								<img src="img/items-img-2.png" alt="" class="items__img" />
+								<h5 class="heading name">Microsoft Office</h5>
+								<h5 class="heading title">Operating Systems & Mac Software</h5>
+								<div class="price-list d-flex justify-content-center align-items-center gap-2 mb-1">
+									<p class="price">$30.00</p>
+									<span class="discount">-11%</span>
+									<span class="old-price">$45.00</span>
+								</div>
+
+								<div class="items__bottom">
+									<p class="text mb-2 text-center">
+										Lorem ipsum dolor sit amet consectetur. Sollicitudin maecenas vehicula neque
+										eget ut fringilla.
+									</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<button class="btn btn-search">
+											<i class="bi bi-search"></i>
+										</button>
+										<button class="btn btn-cart">Add to cart</button>
+										<button class="btn btn-wishlist">
+											<i class="bi bi-heart"></i>
+										</button>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="col-12 col-sm-6 col-lg-3">
 							<div class="items__item">
-								<h4 class="heading">Graphics Software</h4>
 								<img src="img/items-img-3.png" alt="" class="items__img" />
+								<h5 class="heading name">Microsoft Office</h5>
+								<h5 class="heading title">Operating Systems & Mac Software</h5>
+								<div class="price-list d-flex justify-content-center align-items-center gap-2 mb-1">
+									<p class="price">$30.00</p>
+									<span class="discount">-11%</span>
+									<span class="old-price">$45.00</span>
+								</div>
+
+								<div class="items__bottom">
+									<p class="text mb-2 text-center">
+										Lorem ipsum dolor sit amet consectetur. Sollicitudin maecenas vehicula neque
+										eget ut fringilla.
+									</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<button class="btn btn-search">
+											<i class="bi bi-search"></i>
+										</button>
+										<button class="btn btn-cart">Add to cart</button>
+										<button class="btn btn-wishlist">
+											<i class="bi bi-heart"></i>
+										</button>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="col-12 col-sm-6 col-lg-3">
 							<div class="items__item">
-								<h4 class="heading">Finance & Accountancy</h4>
 								<img src="img/items-img-4.png" alt="" class="items__img" />
+								<h5 class="heading name">Microsoft Office</h5>
+								<h5 class="heading title">Operating Systems & Mac Software</h5>
+								<div class="price-list d-flex justify-content-center align-items-center gap-2 mb-1">
+									<p class="price">$30.00</p>
+									<span class="discount">-11%</span>
+									<span class="old-price">$45.00</span>
+								</div>
+
+								<div class="items__bottom">
+									<p class="text mb-2 text-center">
+										Lorem ipsum dolor sit amet consectetur. Sollicitudin maecenas vehicula neque
+										eget ut fringilla.
+									</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<button class="btn btn-search">
+											<i class="bi bi-search"></i>
+										</button>
+										<button class="btn btn-cart">Add to cart</button>
+										<button class="btn btn-wishlist">
+											<i class="bi bi-heart"></i>
+										</button>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -250,29 +435,117 @@
 						use scripts, profit lock systems and lots more, get the while you can!
 					</h3>
 
-					<div class="items row g-5">
+					<div class="items row g-5 mb-4">
 						<div class="col-12 col-sm-6 col-lg-3">
 							<div class="items__item">
-								<h4 class="heading">Operating Systems & Mac Software</h4>
 								<img src="img/items-img-1.png" alt="" class="items__img" />
+								<h5 class="heading name">Microsoft Office</h5>
+								<h5 class="heading title">Operating Systems & Mac Software</h5>
+								<div class="price-list d-flex justify-content-center align-items-center gap-2 mb-1">
+									<p class="price">$30.00</p>
+									<span class="discount">-11%</span>
+									<span class="old-price">$45.00</span>
+								</div>
+
+								<div class="items__bottom">
+									<p class="text mb-2 text-center">
+										Lorem ipsum dolor sit amet consectetur. Sollicitudin maecenas vehicula neque
+										eget ut fringilla.
+									</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<button class="btn btn-search">
+											<i class="bi bi-search"></i>
+										</button>
+										<button class="btn btn-cart">Add to cart</button>
+										<button class="btn btn-wishlist">
+											<i class="bi bi-heart"></i>
+										</button>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="col-12 col-sm-6 col-lg-3">
 							<div class="items__item">
-								<h4 class="heading">Office & Management</h4>
 								<img src="img/items-img-2.png" alt="" class="items__img" />
+								<h5 class="heading name">Microsoft Office</h5>
+								<h5 class="heading title">Operating Systems & Mac Software</h5>
+								<div class="price-list d-flex justify-content-center align-items-center gap-2 mb-1">
+									<p class="price">$30.00</p>
+									<span class="discount">-11%</span>
+									<span class="old-price">$45.00</span>
+								</div>
+
+								<div class="items__bottom">
+									<p class="text mb-2 text-center">
+										Lorem ipsum dolor sit amet consectetur. Sollicitudin maecenas vehicula neque
+										eget ut fringilla.
+									</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<button class="btn btn-search">
+											<i class="bi bi-search"></i>
+										</button>
+										<button class="btn btn-cart">Add to cart</button>
+										<button class="btn btn-wishlist">
+											<i class="bi bi-heart"></i>
+										</button>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="col-12 col-sm-6 col-lg-3">
 							<div class="items__item">
-								<h4 class="heading">Graphics Software</h4>
 								<img src="img/items-img-3.png" alt="" class="items__img" />
+								<h5 class="heading name">Microsoft Office</h5>
+								<h5 class="heading title">Operating Systems & Mac Software</h5>
+								<div class="price-list d-flex justify-content-center align-items-center gap-2 mb-1">
+									<p class="price">$30.00</p>
+									<span class="discount">-11%</span>
+									<span class="old-price">$45.00</span>
+								</div>
+
+								<div class="items__bottom">
+									<p class="text mb-2 text-center">
+										Lorem ipsum dolor sit amet consectetur. Sollicitudin maecenas vehicula neque
+										eget ut fringilla.
+									</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<button class="btn btn-search">
+											<i class="bi bi-search"></i>
+										</button>
+										<button class="btn btn-cart">Add to cart</button>
+										<button class="btn btn-wishlist">
+											<i class="bi bi-heart"></i>
+										</button>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="col-12 col-sm-6 col-lg-3">
 							<div class="items__item">
-								<h4 class="heading">Finance & Accountancy</h4>
 								<img src="img/items-img-4.png" alt="" class="items__img" />
+								<h5 class="heading name">Microsoft Office</h5>
+								<h5 class="heading title">Operating Systems & Mac Software</h5>
+								<div class="price-list d-flex justify-content-center align-items-center gap-2 mb-1">
+									<p class="price">$30.00</p>
+									<span class="discount">-11%</span>
+									<span class="old-price">$45.00</span>
+								</div>
+
+								<div class="items__bottom">
+									<p class="text mb-2 text-center">
+										Lorem ipsum dolor sit amet consectetur. Sollicitudin maecenas vehicula neque
+										eget ut fringilla.
+									</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<button class="btn btn-search">
+											<i class="bi bi-search"></i>
+										</button>
+										<button class="btn btn-cart">Add to cart</button>
+										<button class="btn btn-wishlist">
+											<i class="bi bi-heart"></i>
+										</button>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -289,73 +562,164 @@
 
 					<div class="membership row g-5">
 						<div class="col-12 col-sm-6 col-lg-3">
-							<div class="membership__item vip">
+							<div class="membership__item Reseller">
 								<div class="membership__top">
-									<h2 class="heading mb-1">Vip Mebership</h2>
-									<h3 class="heading">$10 / Month</h3>
+									<img
+										src="img/membership-icon.png"
+										class="membership__icon membership__icon-1"
+										alt=""
+									/>
+									<img
+										src="img/membership-icon-hove.png"
+										class="membership__icon membership__icon-2"
+										alt=""
+									/>
+									<h2 class="heading mb-1">Reseller Membership</h2>
+									<h3 class="heading d-flex flex-column align-items-center">
+										<span class="price">$50</span>
+										<span class="month">Per Month</span>
+									</h3>
 								</div>
 								<ul class="membership__list">
-									<li>Lifetime Membership</li>
-									<li>Everytime you can buy ea  at lower prices</li>
-								</ul>
-
-								<button class="btn btn-membershipt">get started</button>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-lg-3">
-							<div class="membership__item premium">
-								<div class="membership__top">
-									<h2 class="heading mb-1">Premium Membership</h2>
-									<h3 class="heading">$200 / Year</h3>
-								</div>
-								<ul class="membership__list">
-									<li>1 Year Membership</li>
 									<li>
-										You can get free access to all EAs of my channel with future updates for a
-										one-time fee of 200$ payment
+										<i class="bi bi-check-lg"></i>
+										<span class="text">Lifetime Membership</span>
+									</li>
+									<li>
+										<i class="bi bi-check-lg"></i>
+										<span class="text"
+											>You can resell my all ea with  lifetime free updates for a one-time fee $350
+											& monthly $100 payment</span
+										>
+									</li>
+									<li>
+										<i class="bi bi-check-lg"></i>
+										<span class="text">25000+ EA Channel</span>
+									</li>
+									<li>
+										<i class="bi bi-check-lg"></i>
+										<span class="text">Source Code Channel</span>
+									</li>
+									<li>
+										<i class="bi bi-check-lg"></i>
+										<span class="text">Can request EA</span>
 									</li>
 								</ul>
 
-								<button class="btn btn-membershipt">get started</button>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-lg-3">
-							<div class="membership__item Elite">
-								<div class="membership__top">
-									<h2 class="heading mb-1">Elite Membership</h2>
-									<h3 class="heading">$300 / Month</h3>
-								</div>
-								<ul class="membership__list">
-									<li>1 Year $100 - $120</li>
-									<li>Lifetime package $1000 -$1500</li>
-									<li>
-										You can get free access to all EAs of my channel with  lifetime free updates for
-										a one-time fee of $300 & monthly $10 payment
-									</li>
-									<li>Private Channel+ Discussion Group</li>
-								</ul>
-
-								<button class="btn btn-membershipt">get started</button>
+								<button class="btn btn-membershipt">Purchase</button>
 							</div>
 						</div>
 						<div class="col-12 col-sm-6 col-lg-3">
 							<div class="membership__item Reseller">
 								<div class="membership__top">
-									<h2 class="heading mb-1">Reseller Membership</h2>
-									<h3 class="heading">$350 / Month</h3>
+									<img
+										src="img/membership-icon.png"
+										class="membership__icon membership__icon-1"
+										alt=""
+									/>
+									<img
+										src="img/membership-icon-hove.png"
+										class="membership__icon membership__icon-2"
+										alt=""
+									/>
+									<h2 class="heading mb-1">Vip Mebership</h2>
+									<h3 class="heading d-flex flex-column align-items-center">
+										<span class="price">$100</span>
+										<span class="month">Per Month</span>
+									</h3>
 								</div>
 								<ul class="membership__list">
-									<li>Lifetime Membership</li>
 									<li>
-										You can resell my all ea with  lifetime free updates for a one-time fee $350 &
-										monthly $100 payment
+										<i class="bi bi-check-lg"></i>
+										<span class="text">Lifetime Membership</span>
 									</li>
-									<li>25000+ EA Channel</li>
-									<li>Source Code Channel</li>
-									<li>Can request EA</li>
+									<li>
+										<i class="bi bi-check-lg"></i>
+										<span class="text">Everytime you can buy ea  at lower prices</span>
+									</li>
 								</ul>
 
-								<button class="btn btn-membershipt">get started</button>
+								<button class="btn btn-membershipt">Purchase</button>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-3">
+							<div class="membership__item Reseller">
+								<div class="membership__top">
+									<img
+										src="img/membership-icon.png"
+										class="membership__icon membership__icon-1"
+										alt=""
+									/>
+									<img
+										src="img/membership-icon-hove.png"
+										class="membership__icon membership__icon-2"
+										alt=""
+									/>
+									<h2 class="heading mb-1">Elite Membership</h2>
+									<h3 class="heading d-flex flex-column align-items-center">
+										<span class="price">$150</span>
+										<span class="month">Per Month</span>
+									</h3>
+								</div>
+								<ul class="membership__list">
+									<li>
+										<i class="bi bi-check-lg"></i>
+										<span class="text">1 Year $100 - $120</span>
+									</li>
+									<li>
+										<i class="bi bi-check-lg"></i>
+										<span class="text">Lifetime package $1000 -$1500</span>
+									</li>
+									<li>
+										<i class="bi bi-check-lg"></i>
+										<span class="text"
+											>You can get free access to all EAs of my channel with  lifetime free updates
+											for a one-time fee of $300 & monthly $10 payment</span
+										>
+									</li>
+									<li>
+										<i class="bi bi-check-lg"></i>
+										<span class="text">Private Channel+ Discussion Group</span>
+									</li>
+								</ul>
+
+								<button class="btn btn-membershipt">Purchase</button>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-3">
+							<div class="membership__item Reseller">
+								<div class="membership__top">
+									<img
+										src="img/membership-icon.png"
+										class="membership__icon membership__icon-1 mb-2"
+										alt=""
+									/>
+									<img
+										src="img/membership-icon-hove.png"
+										class="membership__icon membership__icon-2 mb-2"
+										alt=""
+									/>
+									<h2 class="heading mb-1">Premium Membership</h2>
+									<h3 class="heading d-flex flex-column align-items-center">
+										<span class="price">$200</span>
+										<span class="month">Per Month</span>
+									</h3>
+								</div>
+								<ul class="membership__list">
+									<li>
+										<i class="bi bi-check-lg"></i>
+										<span class="text">1 Year Membership</span>
+									</li>
+									<li>
+										<i class="bi bi-check-lg"></i>
+										<span class="text"
+											>You can get free access to all EAs of my channel with future updates for a
+											one-time fee of 200$ payment
+										</span>
+									</li>
+								</ul>
+
+								<button class="btn btn-membershipt">Purchase</button>
 							</div>
 						</div>
 					</div>
@@ -392,7 +756,13 @@
 								/>
 							</div>
 							<div class="d-flex align-items-center justify-content-center gap-2 mb-2">
-								<textarea name="message" id="" cols="30" rows="10"></textarea>
+								<textarea
+									name="message"
+									id=""
+									cols="30"
+									rows="10"
+									placeholder="Request Details"
+								></textarea>
 							</div>
 							<div class="request-btn text-center">
 								<button class="btn btn-submit">submit request</button>
@@ -408,61 +778,67 @@
 					<h2 class="heading mb-4 text-center">What Our Client Say</h2>
 
 					<div class="client d-flex justify-content-between align-items-center gap-3">
-						<figure class="client__img">
-							<img src="img/client-img-2.png" alt="" />
-						</figure>
 						<div class="swiper">
 							<!-- Additional required wrapper -->
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<div class="client__item">
-										<span class="symbol mb-4">&#34;</span>
-										<p class="text desc mb-4">
-											Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-											Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-											when an unknown printer took a galley of type and scrambled it to make a type
-											specimen book. It has survived not only five centuries, but also the leap into
-											electronic typesetting, remaining essentially unchanged.
-										</p>
 										<figure class="client__profile mb-3">
 											<img src="img/client-img-1.png" alt="" />
 										</figure>
 										<h3 class="heading">H. Rackham</h3>
-										<p class="text title">Director Open X</p>
+										<p class="text title mb-2">Director Open X</p>
+
+										<div class="desc">
+											<span class="symbol"><i>"</i></span>
+											<p class="text mb-4">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+												Lorem Ipsum has been the industry's standard dummy text ever since the
+												1500s, when an unknown printer took a galley of type and scrambled it to
+												make a type specimen book. It has survived not only five centuries, but also
+												the leap into electronic typesetting, remaining essentially unchanged.
+											</p>
+										</div>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="client__item">
-										<span class="symbol mb-4">&#34;</span>
-										<p class="text desc mb-4">
-											Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-											Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-											when an unknown printer took a galley of type and scrambled it to make a type
-											specimen book. It has survived not only five centuries, but also the leap into
-											electronic typesetting, remaining essentially unchanged.
-										</p>
 										<figure class="client__profile mb-3">
-											<img src="img/client-img-2.png" alt="" />
+											<img src="img/client-img-1.png" alt="" />
 										</figure>
 										<h3 class="heading">H. Rackham</h3>
-										<p class="text title">Director Open X</p>
+										<p class="text title mb-2">Director Open X</p>
+
+										<div class="desc">
+											<span class="symbol"><i>"</i></span>
+											<p class="text mb-4">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+												Lorem Ipsum has been the industry's standard dummy text ever since the
+												1500s, when an unknown printer took a galley of type and scrambled it to
+												make a type specimen book. It has survived not only five centuries, but also
+												the leap into electronic typesetting, remaining essentially unchanged.
+											</p>
+										</div>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="client__item">
-										<span class="symbol mb-4">&#34;</span>
-										<p class="text desc mb-4">
-											Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-											Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-											when an unknown printer took a galley of type and scrambled it to make a type
-											specimen book. It has survived not only five centuries, but also the leap into
-											electronic typesetting, remaining essentially unchanged.
-										</p>
 										<figure class="client__profile mb-3">
-											<img src="img/client-img-3.png" alt="" />
+											<img src="img/client-img-1.png" alt="" />
 										</figure>
 										<h3 class="heading">H. Rackham</h3>
-										<p class="text title">Director Open X</p>
+										<p class="text title mb-2">Director Open X</p>
+
+										<div class="desc">
+											<span class="symbol"><i>"</i></span>
+											<p class="text mb-4">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+												Lorem Ipsum has been the industry's standard dummy text ever since the
+												1500s, when an unknown printer took a galley of type and scrambled it to
+												make a type specimen book. It has survived not only five centuries, but also
+												the leap into electronic typesetting, remaining essentially unchanged.
+											</p>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -475,9 +851,6 @@
 								<i class="bi bi-chevron-right"></i>
 							</div>
 						</div>
-						<figure class="client__img">
-							<img src="img/client-img-3.png" alt="" />
-						</figure>
 					</div>
 				</div>
 			</section>
@@ -488,7 +861,8 @@
 					<div class="footer row g-5">
 						<div class="col-12 col-sm-6 col-lg-3">
 							<div class="footer__item logo-area">
-								<img src="img/logo-black.png" alt="" class="logo mb-3" />
+								<img src="img/logo-black.png" alt="" class="logo logo-black mb-3" />
+								<img src="img/LOGO.png" alt="" class="logo logo-white mb-3" />
 								<p class="text mb-3">
 									The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for
 									those interested

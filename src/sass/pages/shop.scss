@@ -1,0 +1,267 @@
+.page-title {
+	padding: 5rem 0;
+	font-weight: 600;
+
+	h1 {
+		font-size: 10rem;
+		color: #20234a;
+		text-transform: uppercase;
+
+		@media only screen and (max-width: $tab-land) {
+			font-size: 6rem;
+		}
+	}
+
+	.title-line {
+		height: 0.8rem;
+		max-width: 31rem;
+		margin: 0 auto;
+		text-align: center;
+		background-color: #20234a;
+	}
+}
+
+.shop-page {
+	position: relative;
+
+	.shop {
+		display: grid;
+		grid-template-columns: 25rem 1fr;
+		gap: 2rem;
+
+		@media only screen and (max-width: $tab-land) {
+			grid-template-columns: 1fr;
+		}
+
+		.categories {
+			transition: all 0.5s;
+
+			@media only screen and (max-width: $tab-land) {
+				position: absolute;
+				top: 38rem;
+				left: 0;
+				background-color: $color-white;
+				padding: 4rem;
+				max-width: 35rem;
+				width: 100%;
+				box-shadow: 0px 0px 10px 2px rgba(32, 35, 74, 0.25);
+				transform: translateX(-100%);
+			}
+
+			.btn-close-categories {
+				display: none;
+
+				@media only screen and (max-width: $tab-land) {
+					display: block;
+					position: absolute;
+					top: 1rem;
+					right: 1rem;
+					background-color: transparent;
+					padding: 0;
+
+					i {
+						font-size: 3rem;
+					}
+				}
+			}
+
+			.btn {
+				padding: 0.4rem 1.5rem;
+			}
+
+			&__item {
+				h4 {
+					border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+					padding-bottom: 2rem;
+				}
+			}
+
+			&__list {
+				display: flex;
+				flex-direction: column;
+				gap: 1rem;
+				list-style: circle;
+
+				&--item {
+					display: flex;
+					justify-content: flex-start;
+					align-items: center;
+					gap: 1rem;
+					cursor: pointer;
+
+					.circle {
+						height: 4px;
+						width: 4px;
+						background-color: #808080;
+						border-radius: 50%;
+					}
+					.text {
+						font-size: 1.6rem;
+						color: #808080;
+						transition: all 0.3s;
+						margin-right: auto;
+					}
+
+					.item-number {
+						height: 3.5rem;
+						width: 3.5rem;
+						border-radius: 50%;
+						background-color: #f0f2f1;
+						transition: all 0.3s;
+						font-size: 1.6rem;
+						color: $color-black;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+					}
+
+					&:hover {
+						.item-number {
+							background-color: #20234a;
+							color: $color-white;
+						}
+
+						.text {
+							color: #20234a;
+						}
+					}
+				}
+			}
+
+			.btn-apply {
+				background: #20234a;
+				border-radius: 3.77143px;
+				padding: 3px 9px;
+				font-size: 10px;
+				text-transform: uppercase;
+			}
+
+			.range-wrapper {
+				.slider {
+					-webkit-appearance: none;
+					width: 100%;
+					height: 7px;
+					background: rgba(32, 35, 74, 0.5);
+					outline: none;
+					-webkit-transition: 0.2s;
+					transition: opacity 0.2s;
+				}
+
+				.slider::-webkit-slider-thumb {
+					-webkit-appearance: none;
+					appearance: none;
+					width: 17px;
+					height: 17px;
+					border-radius: 50%;
+					background: #20234a;
+					cursor: pointer;
+				}
+
+				.slider::-moz-range-thumb {
+					width: 17px;
+					height: 17px;
+					border-radius: 50%;
+					box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+					cursor: pointer;
+				}
+			}
+
+			&__btns {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 2rem;
+
+				.btn {
+					font-size: 1.6rem;
+					background: #ffffff;
+					box-shadow: 0px 0px 10px 3px rgba(32, 35, 74, 0.25);
+					border-radius: 6px;
+					color: #8f8e8e;
+					transition: all 0.3s;
+					padding: 0.8rem 1.5rem;
+					text-transform: uppercase;
+
+					&:hover {
+						background-color: #20234a;
+						color: $color-white;
+					}
+				}
+			}
+		}
+
+		&__right {
+		}
+
+		&__top {
+			display: flex;
+			align-items: center;
+			gap: 1.5rem;
+
+			.btn-category {
+				background-color: transparent;
+				display: none;
+
+				@media only screen and (max-width: $tab-land) {
+					display: block;
+				}
+
+				.icon {
+					fill: $color-black;
+				}
+			}
+
+			.text {
+				border: 1px solid #808080;
+				padding: 2rem 0;
+				width: 100%;
+			}
+		}
+
+		.items {
+			.name {
+			}
+
+			.title {
+			}
+
+			.btn-search,
+			.btn-wishlist {
+				display: none;
+			}
+
+			.btn-cart {
+				margin: 0 auto;
+			}
+		}
+	}
+	.show-category {
+		.categories {
+			transform: translateX(0);
+		}
+	}
+
+	.pagination {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 2rem;
+
+		.btn {
+			padding: 0.7rem 1.7rem;
+			background-color: transparent;
+			border: 1px solid #20234a;
+			color: #20234a;
+			font-weight: 400;
+
+			&:hover {
+				background-color: #20234a;
+				color: $color-white;
+			}
+		}
+
+		.active {
+			background-color: #20234a;
+			color: $color-white;
+		}
+	}
+}

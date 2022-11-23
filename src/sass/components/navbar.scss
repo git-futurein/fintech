@@ -76,12 +76,24 @@
 	.btn {
 		padding: 0;
 		background-color: transparent;
+		height: 2rem;
+		width: 2rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
 		.icon {
 			fill: $color-white;
-			height: 2.4rem;
-			width: 2.4rem;
+			height: 100%;
+			width: 100%;
 		}
+	}
+
+	.btn-light {
+		display: none;
+	}
+	.btn-dark {
+		display: flex;
 	}
 
 	&__links {

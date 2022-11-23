@@ -1,1 +1,161 @@
+.dark {
+	body {
+		background: $color-dark;
+		color: #fff;
+	}
+	.nav {
+		box-shadow: 0px 0px 15px 5px rgba(0, 255, 226, 0.25);
 
+		.btn-light {
+			display: flex;
+		}
+		.btn-dark {
+			display: none;
+		}
+		.nav__links {
+			background-color: transparent;
+
+			a:link,
+			a:visited {
+				color: $color-white;
+			}
+		}
+	}
+
+	.header__search {
+		border: 1px solid #00ffe2;
+		// filter: drop-shadow(4px 4px 15px #00ffe2);
+		// backdrop-filter: blur(2px);
+		border-radius: 4rem;
+
+		input {
+			color: $color-white;
+		}
+
+		select {
+			color: $color-white;
+			option {
+				background-color: $color-dark;
+				color: $color-white;
+			}
+		}
+	}
+
+	.items-section .items__btn .btn,
+	.request-sction .request__form .btn {
+		background: $color-primary;
+	}
+
+	h1.heading {
+		color: $color-primary;
+	}
+	h2.heading,
+	h3.heading,
+	h5.heading,
+	h4.heading {
+		color: $color-white;
+	}
+
+	.text {
+		color: $color-light;
+	}
+
+	a:link,
+	a:visited {
+		color: $color-white;
+	}
+
+	.about-section h2,
+	.request-sction h2 {
+		color: $color-primary !important;
+	}
+
+	.membership {
+		&__item {
+			background: rgba(0, 0, 0, 0.25);
+			box-shadow: 0px 0px 17.8px 2.96666px rgba(0, 255, 225, 0.174);
+			border-radius: 7.11999px;
+			position: relative;
+			z-index: 1;
+
+			&:hover {
+				transform: scaleY(1.1) scaleX(1.2);
+				box-shadow: 0px 0px 17.8px 2.96666px rgba(0, 255, 225, 0.174);
+				position: relative;
+				z-index: 2;
+
+				.membership__icon-1 {
+					display: none;
+				}
+				.membership__icon-2 {
+					display: block;
+				}
+			}
+			.btn {
+				background-color: #545454;
+			}
+		}
+	}
+
+	.request-sction .request__form input,
+	.request-sction .request__form textarea {
+		background: rgba(0, 255, 226, 0.2);
+		color: #fff;
+	}
+	.request-sction .request__form input::placeholder,
+	.request-sction .request__form textarea::placeholder {
+		color: $color-light;
+	}
+
+	.footer-section {
+		.logo-area .social__link {
+			background-color: $color-primary;
+		}
+		.footer__item .btn-docs {
+			background-color: $color-primary;
+			color: #fff;
+		}
+		.footer__item .btn-api {
+			background-color: transparent;
+			color: $color-white;
+			border: 1px solid $color-white;
+		}
+		.logo-white {
+			display: block !important;
+		}
+		.logo-black {
+			display: none !important;
+		}
+	}
+
+	.items-section .items__item {
+		background: #19212f;
+
+		.price-list {
+			.discount {
+				color: #d9d9d9;
+			}
+			.old-price {
+				color: #979797;
+			}
+			.price {
+				font-size: 1.6rem;
+				color: $color-primary;
+			}
+		}
+
+		.btn-cart {
+			background-color: $color-primary;
+		}
+	}
+
+	.client-section {
+		.text {
+			color: $color-light !important;
+		}
+		.swiper .swiper-button-next i,
+		.swiper .swiper-button-prev i {
+			color: $color-light !important;
+		}
+	}
+}

@@ -16,9 +16,10 @@
 	}
 	&__search {
 		border: 1px solid #000133;
-		filter: drop-shadow(0px 4px 4px rgba(0, 1, 51, 0.25)) drop-shadow(4px 4px 15px #000133);
+		// filter: drop-shadow(0px 4px 4px rgba(0, 1, 51, 0.25)) drop-shadow(4px 4px 15px #000133);
 		border-radius: 40px;
 		border-radius: 10rem;
+		padding-right: 2rem;
 
 		input {
 			border: none;
@@ -29,6 +30,17 @@
 
 		label {
 			padding-left: 3.2rem;
+		}
+
+		select {
+			background: transparent;
+			border: none;
+			outline: none;
+			color: $color-black;
+
+			option {
+				background-color: transparent;
+			}
 		}
 	}
 

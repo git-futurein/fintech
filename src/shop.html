@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Shop | fintech website</title>
+
+		<!-- font link -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- bootstrap link -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+		/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	</head>
+	<body class="shop-page">
+		<main class="main">
+			<nav class="nav">
+				<div class="main-nav">
+					<div class="container">
+						<div class="nav__wrapper d-flex justify-content-between align-items-center gap-4">
+							<div class="nav__logo d-flex align-items-center gap-3">
+								<img src="img/LOGO.png" alt="logo" />
+							</div>
+							<div class="nav__right d-flex align-items-center">
+								<div class="d-flex align-items-center gap-5">
+									<a href="#" class="nav__icon wishlist">
+										<i class="bi bi-heart"></i>
+										<span class="wishlist__number">4</span>
+									</a>
+									<a href="#" class="nav__icon cart">
+										<i class="bi bi-basket2"></i>
+										<span class="cart__number">4</span>
+									</a>
+									<button class="btn btn-dark">
+										<svg class="icon icon-dark">
+											<use xlink:href="img/icons.svg#icon-dark"></use>
+										</svg>
+									</button>
+									<button class="btn btn-light">
+										<svg class="icon icon-dark">
+											<use xlink:href="img/icons.svg#icon-light"></use>
+										</svg>
+									</button>
+									<a href="#" class="link login">login/register</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="nav__links">
+					<div class="container">
+						<ul class="nav__list d-flex justify-content-center align-items-center gap-5">
+							<li class="nav__item">
+								<a href="#" class="nav__link active">Expert advisor</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Indicators</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Trading system</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Trading Tools</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Source Code</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Membership</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Free product</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Shop</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Custom Request</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Pages</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+			<div class="container">
+				<div class="page-title mb-8 text-center">
+					<h1 class="heading">SHop Page</h1>
+					<div class="title-line"></div>
+				</div>
+
+				<div class="shop">
+					<div class="categories">
+						<button class="btn-close-categories"><i class="bi bi-x"></i></button>
+						<div class="categories__item mb-2">
+							<h4 class="heading mb-2">Product categories</h4>
+							<ul class="categories__list">
+								<li class="categories__list--item">
+									<div class="circle"></div>
+									<span class="text">categories 1</span>
+									<span class="item-number">12</span>
+								</li>
+								<li class="categories__list--item">
+									<div class="circle"></div>
+									<span class="text">categories 1</span>
+									<span class="item-number">12</span>
+								</li>
+								<li class="categories__list--item">
+									<div class="circle"></div>
+									<span class="text">categories 1</span>
+									<span class="item-number">12</span>
+								</li>
+								<li class="categories__list--item">
+									<div class="circle"></div>
+									<span class="text">categories 1</span>
+									<span class="item-number">12</span>
+								</li>
+								<li class="categories__list--item">
+									<div class="circle"></div>
+									<span class="text">categories 1</span>
+									<span class="item-number">12</span>
+								</li>
+								<li class="categories__list--item">
+									<div class="circle"></div>
+									<span class="text">categories 1</span>
+									<span class="item-number">12</span>
+								</li>
+							</ul>
+						</div>
+
+						<div class="categories__item mb-2">
+							<h4 class="heading mb-2">Select By price</h4>
+
+							<div class="range-wrapper">
+								<input type="range" min="1" max="100" value="50" class="slider" id="myRange" />
+							</div>
+							<div class="d-flex justify-content-between align-items-center">
+								<button class="btn btn-apply">apply</button>
+								<div
+									class="categories__price d-flex justify-content-between align-items-center gap-2"
+								>
+									<span class="min-price">$65</span>
+									<span class="minus">-</span>
+									<span class="min-price">$600</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="categories__item">
+							<h4 class="heading mb-2">Popular Product tags</h4>
+							<div class="categories__btns">
+								<button class="btn">product</button>
+								<button class="btn">product</button>
+								<button class="btn">product</button>
+								<button class="btn">product</button>
+								<button class="btn">product</button>
+								<button class="btn">product</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="shop__right">
+						<div class="shop__top mb-2">
+							<button class="btn-category">
+								<svg class="icon"><use xlink:href="img/icons.svg#icon-bars"></use></svg>
+							</button>
+							<p class="text text-center">Showing 1-9 of 32 results</p>
+						</div>
+						<div class="items row g-5 mb-4">
+							<div class="col-12 col-sm-6 col-xl-4 col-xxl-3">
+								<div class="items__item">
+									<img src="img/items-img-1.png" alt="" class="items__img" />
+									<h5 class="heading name">Microsoft Office</h5>
+									<h5 class="heading title">Operating Systems & Mac Software</h5>
+									<div
+										class="price-list d-flex justify-content-center align-items-center gap-2 mb-1"
+									>
+										<p class="price">$30.00</p>
+										<span class="discount">-11%</span>
+										<span class="old-price">$45.00</span>
+									</div>
+
+									<div class="items__bottom">
+										<p class="text mb-2 text-center">
+											Lorem ipsum dolor sit amet consectetur. Sollicitudin maecenas vehicula neque
+											eget ut fringilla.
+										</p>
+										<div class="d-flex justify-content-between align-items-center">
+											<button class="btn btn-search">
+												<i class="bi bi-search"></i>
+											</button>
+											<button class="btn btn-cart">Add to cart</button>
+											<button class="btn btn-wishlist">
+												<i class="bi bi-heart"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-xl-4 col-xxl-3">
+								<div class="items__item">
+									<img src="img/items-img-2.png" alt="" class="items__img" />
+									<h5 class="heading name">Microsoft Office</h5>
+									<h5 class="heading title">Operating Systems & Mac Software</h5>
+									<div
+										class="price-list d-flex justify-content-center align-items-center gap-2 mb-1"
+									>
+										<p class="price">$30.00</p>
+										<span class="discount">-11%</span>
+										<span class="old-price">$45.00</span>
+									</div>
+
+									<div class="items__bottom">
+										<p class="text mb-2 text-center">
+											Lorem ipsum dolor sit amet consectetur. Sollicitudin maecenas vehicula neque
+											eget ut fringilla.
+										</p>
+										<div class="d-flex justify-content-between align-items-center">
+											<button class="btn btn-search">
+												<i class="bi bi-search"></i>
+											</button>
+											<button class="btn btn-cart">Add to cart</button>
+											<button class="btn btn-wishlist">
+												<i class="bi bi-heart"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-xl-4 col-xxl-3">
+								<div class="items__item">
+									<img src="img/items-img-3.png" alt="" class="items__img" />
+									<h5 class="heading name">Microsoft Office</h5>
+									<h5 class="heading title">Operating Systems & Mac Software</h5>
+									<div
+										class="price-list d-flex justify-content-center align-items-center gap-2 mb-1"
+									>
+										<p class="price">$30.00</p>
+										<span class="discount">-11%</span>
+										<span class="old-price">$45.00</span>
+									</div>
+
+									<div class="items__bottom">
+										<p class="text mb-2 text-center">
+											Lorem ipsum dolor sit amet consectetur. Sollicitudin maecenas vehicula neque
+											eget ut fringilla.
+										</p>
+										<div class="d-flex justify-content-between align-items-center">
+											<button class="btn btn-search">
+												<i class="bi bi-search"></i>
+											</button>
+											<button class="btn btn-cart">Add to cart</button>
+											<button class="btn btn-wishlist">
+												<i class="bi bi-heart"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-xl-4 col-xxl-3">
+								<div class="items__item">
+									<img src="img/items-img-4.png" alt="" class="items__img" />
+									<h5 class="heading name">Microsoft Office</h5>
+									<h5 class="heading title">Operating Systems & Mac Software</h5>
+									<div
+										class="price-list d-flex justify-content-center align-items-center gap-2 mb-1"
+									>
+										<p class="price">$30.00</p>
+										<span class="discount">-11%</span>
+										<span class="old-price">$45.00</span>
+									</div>
+
+									<div class="items__bottom">
+										<p class="text mb-2 text-center">
+											Lorem ipsum dolor sit amet consectetur. Sollicitudin maecenas vehicula neque
+											eget ut fringilla.
+										</p>
+										<div class="d-flex justify-content-between align-items-center">
+											<button class="btn btn-search">
+												<i class="bi bi-search"></i>
+											</button>
+											<button class="btn btn-cart">Add to cart</button>
+											<button class="btn btn-wishlist">
+												<i class="bi bi-heart"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-xl-4 col-xxl-3">
+								<div class="items__item">
+									<img src="img/items-img-1.png" alt="" class="items__img" />
+									<h5 class="heading name">Microsoft Office</h5>
+									<h5 class="heading title">Operating Systems & Mac Software</h5>
+									<div
+										class="price-list d-flex justify-content-center align-items-center gap-2 mb-1"
+									>
+										<p class="price">$30.00</p>
+										<span class="discount">-11%</span>
+										<span class="old-price">$45.00</span>
+									</div>
+
+									<div class="items__bottom">
+										<p class="text mb-2 text-center">
+											Lorem ipsum dolor sit amet consectetur. Sollicitudin maecenas vehicula neque
+											eget ut fringilla.
+										</p>
+										<div class="d-flex justify-content-between align-items-center">
+											<button class="btn btn-search">
+												<i class="bi bi-search"></i>
+											</button>
+											<button class="btn btn-cart">Add to cart</button>
+											<button class="btn btn-wishlist">
+												<i class="bi bi-heart"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-xl-4 col-xxl-3">
+								<div class="items__item">
+									<img src="img/items-img-2.png" alt="" class="items__img" />
+									<h5 class="heading name">Microsoft Office</h5>
+									<h5 class="heading title">Operating Systems & Mac Software</h5>
+									<div
+										class="price-list d-flex justify-content-center align-items-center gap-2 mb-1"
+									>
+										<p class="price">$30.00</p>
+										<span class="discount">-11%</span>
+										<span class="old-price">$45.00</span>
+									</div>
+
+									<div class="items__bottom">
+										<p class="text mb-2 text-center">
+											Lorem ipsum dolor sit amet consectetur. Sollicitudin maecenas vehicula neque
+											eget ut fringilla.
+										</p>
+										<div class="d-flex justify-content-between align-items-center">
+											<button class="btn btn-search">
+												<i class="bi bi-search"></i>
+											</button>
+											<button class="btn btn-cart">Add to cart</button>
+											<button class="btn btn-wishlist">
+												<i class="bi bi-heart"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-xl-4 col-xxl-3">
+								<div class="items__item">
+									<img src="img/items-img-3.png" alt="" class="items__img" />
+									<h5 class="heading name">Microsoft Office</h5>
+									<h5 class="heading title">Operating Systems & Mac Software</h5>
+									<div
+										class="price-list d-flex justify-content-center align-items-center gap-2 mb-1"
+									>
+										<p class="price">$30.00</p>
+										<span class="discount">-11%</span>
+										<span class="old-price">$45.00</span>
+									</div>
+
+									<div class="items__bottom">
+										<p class="text mb-2 text-center">
+											Lorem ipsum dolor sit amet consectetur. Sollicitudin maecenas vehicula neque
+											eget ut fringilla.
+										</p>
+										<div class="d-flex justify-content-between align-items-center">
+											<button class="btn btn-search">
+												<i class="bi bi-search"></i>
+											</button>
+											<button class="btn btn-cart">Add to cart</button>
+											<button class="btn btn-wishlist">
+												<i class="bi bi-heart"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-xl-4 col-xxl-3">
+								<div class="items__item">
+									<img src="img/items-img-4.png" alt="" class="items__img" />
+									<h5 class="heading name">Microsoft Office</h5>
+									<h5 class="heading title">Operating Systems & Mac Software</h5>
+									<div
+										class="price-list d-flex justify-content-center align-items-center gap-2 mb-1"
+									>
+										<p class="price">$30.00</p>
+										<span class="discount">-11%</span>
+										<span class="old-price">$45.00</span>
+									</div>
+
+									<div class="items__bottom">
+										<p class="text mb-2 text-center">
+											Lorem ipsum dolor sit amet consectetur. Sollicitudin maecenas vehicula neque
+											eget ut fringilla.
+										</p>
+										<div class="d-flex justify-content-between align-items-center">
+											<button class="btn btn-search">
+												<i class="bi bi-search"></i>
+											</button>
+											<button class="btn btn-cart">Add to cart</button>
+											<button class="btn btn-wishlist">
+												<i class="bi bi-heart"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-xl-4 col-xxl-3">
+								<div class="items__item">
+									<img src="img/items-img-1.png" alt="" class="items__img" />
+									<h5 class="heading name">Microsoft Office</h5>
+									<h5 class="heading title">Operating Systems & Mac Software</h5>
+									<div
+										class="price-list d-flex justify-content-center align-items-center gap-2 mb-1"
+									>
+										<p class="price">$30.00</p>
+										<span class="discount">-11%</span>
+										<span class="old-price">$45.00</span>
+									</div>
+
+									<div class="items__bottom">
+										<p class="text mb-2 text-center">
+											Lorem ipsum dolor sit amet consectetur. Sollicitudin maecenas vehicula neque
+											eget ut fringilla.
+										</p>
+										<div class="d-flex justify-content-between align-items-center">
+											<button class="btn btn-search">
+												<i class="bi bi-search"></i>
+											</button>
+											<button class="btn btn-cart">Add to cart</button>
+											<button class="btn btn-wishlist">
+												<i class="bi bi-heart"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-xl-4 col-xxl-3">
+								<div class="items__item">
+									<img src="img/items-img-2.png" alt="" class="items__img" />
+									<h5 class="heading name">Microsoft Office</h5>
+									<h5 class="heading title">Operating Systems & Mac Software</h5>
+									<div
+										class="price-list d-flex justify-content-center align-items-center gap-2 mb-1"
+									>
+										<p class="price">$30.00</p>
+										<span class="discount">-11%</span>
+										<span class="old-price">$45.00</span>
+									</div>
+
+									<div class="items__bottom">
+										<p class="text mb-2 text-center">
+											Lorem ipsum dolor sit amet consectetur. Sollicitudin maecenas vehicula neque
+											eget ut fringilla.
+										</p>
+										<div class="d-flex justify-content-between align-items-center">
+											<button class="btn btn-search">
+												<i class="bi bi-search"></i>
+											</button>
+											<button class="btn btn-cart">Add to cart</button>
+											<button class="btn btn-wishlist">
+												<i class="bi bi-heart"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-xl-4 col-xxl-3">
+								<div class="items__item">
+									<img src="img/items-img-3.png" alt="" class="items__img" />
+									<h5 class="heading name">Microsoft Office</h5>
+									<h5 class="heading title">Operating Systems & Mac Software</h5>
+									<div
+										class="price-list d-flex justify-content-center align-items-center gap-2 mb-1"
+									>
+										<p class="price">$30.00</p>
+										<span class="discount">-11%</span>
+										<span class="old-price">$45.00</span>
+									</div>
+
+									<div class="items__bottom">
+										<p class="text mb-2 text-center">
+											Lorem ipsum dolor sit amet consectetur. Sollicitudin maecenas vehicula neque
+											eget ut fringilla.
+										</p>
+										<div class="d-flex justify-content-between align-items-center">
+											<button class="btn btn-search">
+												<i class="bi bi-search"></i>
+											</button>
+											<button class="btn btn-cart">Add to cart</button>
+											<button class="btn btn-wishlist">
+												<i class="bi bi-heart"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-xl-4 col-xxl-3">
+								<div class="items__item">
+									<img src="img/items-img-4.png" alt="" class="items__img" />
+									<h5 class="heading name">Microsoft Office</h5>
+									<h5 class="heading title">Operating Systems & Mac Software</h5>
+									<div
+										class="price-list d-flex justify-content-center align-items-center gap-2 mb-1"
+									>
+										<p class="price">$30.00</p>
+										<span class="discount">-11%</span>
+										<span class="old-price">$45.00</span>
+									</div>
+
+									<div class="items__bottom">
+										<p class="text mb-2 text-center">
+											Lorem ipsum dolor sit amet consectetur. Sollicitudin maecenas vehicula neque
+											eget ut fringilla.
+										</p>
+										<div class="d-flex justify-content-between align-items-center">
+											<button class="btn btn-search">
+												<i class="bi bi-search"></i>
+											</button>
+											<button class="btn btn-cart">Add to cart</button>
+											<button class="btn btn-wishlist">
+												<i class="bi bi-heart"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- pagination -->
+
+				<div class="pagination">
+					<button class="btn btn-page active">1</button>
+					<button class="btn btn-page">2</button>
+					<button class="btn btn-page">3</button>
+					<button class="btn btn-page">
+						<i class="bi bi-chevron-right"></i>
+					</button>
+				</div>
+			</div>
+
+			<!-- footer -->
+			<footer class="footer-section">
+				<div class="container">
+					<div class="footer row g-5">
+						<div class="col-12 col-sm-6 col-lg-3">
+							<div class="footer__item logo-area">
+								<img src="img/logo-black.png" alt="" class="logo logo-black mb-3" />
+								<img src="img/LOGO.png" alt="" class="logo logo-white mb-3" />
+								<p class="text mb-3">
+									The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for
+									those interested
+								</p>
+								<ul class="social d-flex align-items-center gap-2">
+									<li class="social__item">
+										<a href="#" class="social__link">
+											<i class="bi bi-facebook"></i>
+										</a>
+									</li>
+									<li class="social__item">
+										<a href="#" class="social__link">
+											<i class="bi bi-instagram"></i>
+										</a>
+									</li>
+									<li class="social__item">
+										<a href="#" class="social__link">
+											<i class="bi bi-youtube"></i>
+										</a>
+									</li>
+									<li class="social__item">
+										<a href="#" class="social__link">
+											<i class="bi bi-twitter"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-2">
+							<div class="footer__item service">
+								<h3 class="heading mb-2">Service</h3>
+								<ul class="list">
+									<li class="item">
+										<a href="#" class="link text-uppercase">Expert advisor</a>
+									</li>
+									<li class="item">
+										<a href="#" class="link text-uppercase">Indicators</a>
+									</li>
+									<li class="item">
+										<a href="#" class="link text-uppercase">Trading system</a>
+									</li>
+									<li class="item">
+										<a href="#" class="link text-uppercase">Trading Tools</a>
+									</li>
+									<li class="item">
+										<a href="#" class="link text-uppercase">Source Code</a>
+									</li>
+									<li class="item">
+										<a href="#" class="link text-uppercase">Membership</a>
+									</li>
+									<li class="item">
+										<a href="#" class="link text-uppercase">Free product</a>
+									</li>
+									<li class="item">
+										<a href="#" class="link text-uppercase">shop</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-2">
+							<div class="footer__item company">
+								<h3 class="heading mb-2">Company</h3>
+								<ul class="list">
+									<li class="item">
+										<a href="#" class="link">Custom Request</a>
+									</li>
+									<li class="item">
+										<a href="#" class="link">What we do?</a>
+									</li>
+									<li class="item">
+										<a href="#" class="link">About Us</a>
+									</li>
+									<li class="item">
+										<a href="#" class="link">Contact</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-2">
+							<div class="footer__item company">
+								<h3 class="heading mb-2">Support</h3>
+								<ul class="list">
+									<li class="item">
+										<a href="#" class="link">Help Center</a>
+									</li>
+									<li class="item">
+										<a href="#" class="link">Terms of Service</a>
+									</li>
+									<li class="item">
+										<a href="#" class="link">Legal</a>
+									</li>
+									<li class="item">
+										<a href="#" class="link">Privacy policy</a>
+									</li>
+									<li class="item">
+										<a href="#" class="link">Status</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-12 col-sm-12 col-lg-3">
+							<div class="footer__item company">
+								<h3 class="heading mb-2">Stay up to date</h3>
+								<p class="text mb-3">
+									The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for
+									those interested
+								</p>
+								<div class="footer__btns d-flex align-items-center gap-2">
+									<a href="#" class="btn btn-docs">View Docs</a>
+									<a href="#" class="btn btn-api">API Docs</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</main>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+			integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>

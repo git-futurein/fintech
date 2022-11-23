@@ -19,18 +19,24 @@
 
 		&__item {
 			text-align: center;
-			background: #f8f8f8;
+			background: transparent;
 			border-radius: 2.5rem;
 			padding: 6rem;
+			max-width: 90rem;
+			width: 100%;
+			margin: 0 auto;
 
 			.symbol {
 				font-size: 8rem;
-				height: 6rem;
-				display: block;
-				margin-top: -2rem;
+				margin-top: -3rem;
+				color: $color-primary;
+			}
+			.desc {
+				display: flex;
+				align-items: flex-start;
 			}
 
-			.desc {
+			.desc .text {
 				font-weight: 400;
 				font-size: 1.8rem;
 				line-height: 2.5rem;
